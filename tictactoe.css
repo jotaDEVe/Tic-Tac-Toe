@@ -1,46 +1,46 @@
 body {
-  background-color: #262626;
+  background-color: #353839;
   color: #fff;
 }
 
 #header {
   text-align: center;
   margin-top: 40px;
-  color: #bee7e8;
+  color: #38E4AE;
   font-family: Archivo Narrow;
   font-size: 70px;
 }
 
 #input1 {
-  background-color: #262626;
+  background-color: #353839;
   font-family: Sono;
-  border-color: #acbfa4;
+  border-color: #7BD389;
   font-size: 20px;
-  color: #acbfa4;
+  color: #7BD389;
   text-align: center;
   width: 120px;
-  border-radius: 10px;
+  border-radius: 6px;
 }
 
 #input2 {
-  background-color: #262626;
+  background-color: #353839;
   font-family: Sono;
-  border-color: #acbfa4;
-  color: #acbfa4;
+  border-color: #7BD389;
+  color: #7BD389;
   margin-top: 10px;
   width: 120px;
   text-align: center;
   font-size: 20px;
-  border-radius: 10px;
+  border-radius: 6px;
 }
 
 #label1 {
-  color: #acbfa4;
+  color: #7BD389;
   font-family: Sono;
 }
 
 #label2 {
-  color: #acbfa4;
+  color: #7BD389;
   font-family: Sono;
 }
 
@@ -52,11 +52,11 @@ body {
 }
 
 .corNome {
-  color: #acbfa4;
+  color: #7BD389;
 }
 
 #gameboard {
-  background-color: #bee7e8;
+  background-color: #38E4AE;
   display: grid;
   grid-template-columns: 8rem 8rem 8rem;
   grid-template-rows: 8rem 8rem 8rem;
@@ -67,7 +67,7 @@ body {
 }
 
 #gameboard span {
-  background-color: #262626;
+  background-color: #353839;
   cursor: pointer;
   display: grid;
   text-align: center;
@@ -76,12 +76,12 @@ body {
 }
 
 #começar {
-  background-color: #acbfa4;
-  color: #262626;
+  background-color: #7BD389;
+  color: #353839;
   border-radius: 5px;
   font-family: Sono;
 }
 
 .win {
-  color: #acbfa4;
+  color: #7BD389;
 }
