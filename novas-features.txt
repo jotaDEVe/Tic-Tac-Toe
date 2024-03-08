@@ -1,0 +1,7 @@
+to-do-list
+
+O jogo precisa ter a opção de reiniciar a cada vez que acabar.
+
+O jogador não pode conseguir marcar no tabuleiro depois do jogo ter sido vencido.
+
+Se o jogador tentar iniciar o jogo sem colocar o nome dos jogadores deverá ser alertado do erro.
