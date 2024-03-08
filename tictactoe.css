@@ -1,46 +1,46 @@
 body {
-  background-color: #353839;
+  background-color: #102542;
   color: #fff;
 }
 
 #header {
   text-align: center;
   margin-top: 40px;
-  color: #38E4AE;
+  color: #F87060;
   font-family: Archivo Narrow;
   font-size: 70px;
 }
 
 #input1 {
-  background-color: #353839;
+  background-color: #102542;
   font-family: Sono;
-  border-color: #7BD389;
+  border-color: #F87060;
   font-size: 20px;
-  color: #7BD389;
+  color: #F87060;
   text-align: center;
   width: 120px;
-  border-radius: 6px;
+  border-radius: 0px;
 }
 
 #input2 {
-  background-color: #353839;
+  background-color: #102542;
   font-family: Sono;
-  border-color: #7BD389;
-  color: #7BD389;
+  border-color: #F87060;
+  color: #F87060;
   margin-top: 10px;
   width: 120px;
   text-align: center;
   font-size: 20px;
-  border-radius: 6px;
+  border-radius: 0px;
 }
 
 #label1 {
-  color: #7BD389;
+  color: #F87060;
   font-family: Sono;
 }
 
 #label2 {
-  color: #7BD389;
+  color: #F87060;
   font-family: Sono;
 }
 
@@ -52,11 +52,11 @@ body {
 }
 
 .corNome {
-  color: #7BD389;
+  color: #F87060;
 }
 
 #gameboard {
-  background-color: #38E4AE;
+  background-color: #F87060;
   display: grid;
   grid-template-columns: 8rem 8rem 8rem;
   grid-template-rows: 8rem 8rem 8rem;
@@ -66,8 +66,9 @@ body {
   max-width: 24rem;
 }
 
+
 #gameboard span {
-  background-color: #353839;
+  background-color: #102542;
   cursor: pointer;
   display: grid;
   text-align: center;
@@ -75,13 +76,24 @@ body {
   font-size: 5rem;
 }
 
+#gameboard span:hover {
+  cursor: pointer;
+}
+
 #começar {
-  background-color: #7BD389;
+  background-color: #F87060;
   color: #353839;
-  border-radius: 5px;
+  border-radius: 3px;
   font-family: Sono;
+  font-size: 18px;
+  margin-top: 1rem;
+}
+
+#começar:hover{
+  background-color: #be564a;
+  cursor: pointer;
 }
 
 .win {
-  color: #7BD389;
+  color: #F87060;
 }
