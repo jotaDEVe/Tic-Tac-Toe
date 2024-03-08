@@ -8,7 +8,7 @@ body {
   margin-top: 40px;
   color: #F87060;
   font-family: Archivo Narrow;
-  font-size: 70px;
+  font-size: 84px;
 }
 
 #input1 {
@@ -97,3 +97,53 @@ body {
 .win {
   color: #F87060;
 }
+
+
+
+
+.errorDiv {
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 450px;
+  background-color: #1d1b23;
+  box-shadow: 10px 0px 0px 1011111px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  position: absolute; 
+}
+
+.errorMsg {
+  font-family: "Montserrat", sans-serif;
+  font-size: 26px;
+  padding: 25px;
+  color: rgb(32, 206, 166);
+}
+
+.errorBtn {
+  color: #102542;
+  background-color: rgb(32, 206, 166);
+  margin-top: 5rem;
+  border-radius: 4px;
+  padding: 20px;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.errorBtn:hover {
+  background-color: #F87060;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.errorBtn:active {
+  background-color: #c65c50;
+}
+
+
+
+
+
+
+

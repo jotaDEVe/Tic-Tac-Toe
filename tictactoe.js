@@ -9,14 +9,56 @@ const middir = document.getElementById("1.2");
 const infesq = document.getElementById("2.0");
 const infmid = document.getElementById("2.1");
 const infdir = document.getElementById("2.2");
+const body = document.querySelector("body")
+
+
 
 function changeDefault() {
   JogadorDaVez.innerText = document.querySelector("#input1").value;
   tabuleiro.forEach(function (element) {
     element.classList.remove("win");
     element.innerText = "";
+    
+    // Chamando o evento que começa o jogo:
     element.addEventListener("click", marcar);
   });
+
+  // Captar o Erro e emitir a mensagem na tela
+  if(document.querySelector("#input1").value === "" || document.querySelector("#input2").value === "") {
+    const flexDiv = document.createElement("div");
+    const newDiv = document.createElement("div");
+    const newError = document.createElement("h3");
+    const newButton = document.createElement("button")
+    flexDiv.classList.add("flexErrorDiv")
+    newDiv.classList.add("errorDiv")
+    newError.classList.add("errorMsg")
+    newButton.classList.add("errorBtn")
+    newButton.textContent = "ENTENDI!"
+    newError.textContent = "VOCÊ PRECISA INSERIR O NOME DOS DOIS JOGADORES PARA COMEÇAR!";
+    body.appendChild(flexDiv)
+    flexDiv.appendChild(newDiv)
+    newDiv.appendChild(newError)
+    newDiv.appendChild(newButton)
+
+    // Desativar o botão START enquanto o usuário não entender o erro
+    document.getElementById("começar").disabled = true
+    
+    // Apagar a mensagem da tela quando o usuário clicar no botão
+    newButton.addEventListener("click", () => {
+      body.removeChild(flexDiv)
+      flexDiv.removeChild(newDiv)
+      newDiv.removeChild(newError)
+      newDiv.removeChild(newButton)
+
+      // Reativar o botão START 
+      document.getElementById("começar").disabled = false
+      
+    })
+
+    return;
+    
+
+  }
 }
 
 let velha;
@@ -116,7 +158,14 @@ function marcar(ev) {
   if (JogadorDaVez.innerText === document.querySelector("#input1").value) {
     ev.currentTarget.innerText = "x";
     JogadorDaVez.innerText = document.querySelector("#input2").value;
-  } else {
+  } 
+  else if(document.querySelector("#input1").value == "" && document.querySelector("#input2").value == "") {
+    alert("Você precisa inserir o nome dos dois jogadores!")
+  }
+  else if(document.querySelector("#input1").value == "" || document.querySelector("#input2").value == ""){
+    alert("Você precisa inserir o nome do segundo jogador!")
+  }
+  else {
     ev.currentTarget.innerText = "o";
     JogadorDaVez.innerText = document.querySelector("#input1").value;
   }
